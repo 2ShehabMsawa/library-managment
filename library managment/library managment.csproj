@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DC8C152-D766-4574-A7F8-5144A7699941}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>library_managment</RootNamespace>
+    <AssemblyName>library managment</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Export, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v23.2.UI, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v23.2.Core, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v23.2.Extensions, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AnalysisServices.AppLocal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AnalysisServices.AppLocal.Tabular, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\DBMethods.cs" />
+    <Compile Include="MyControls\BookItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\BookItem.Designer.cs">
+      <DependentUpon>BookItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\myScannercs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControls\myScannercs.Designer.cs">
+      <DependentUpon>myScannercs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\BellPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\BellPage.Designer.cs">
+      <DependentUpon>BellPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\BookPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\BookPage.Designer.cs">
+      <DependentUpon>BookPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\CustomerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\CustomerPage.Designer.cs">
+      <DependentUpon>CustomerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Dialogs\AddEditBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Dialogs\AddEditBook.Designer.cs">
+      <DependentUpon>AddEditBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Dialogs\AddEditCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Dialogs\AddEditCat.Designer.cs">
+      <DependentUpon>AddEditCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Dialogs\AddEditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Dialogs\AddEditCustomer.Designer.cs">
+      <DependentUpon>AddEditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Dialogs\AddEditEmplo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Dialogs\AddEditEmplo.Designer.cs">
+      <DependentUpon>AddEditEmplo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\EmployeePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\EmployeePage.Designer.cs">
+      <DependentUpon>EmployeePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\ReportsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\ReportsPage.Designer.cs">
+      <DependentUpon>ReportsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\splashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\splashScreen.Designer.cs">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\RBorrowBell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RBorrowBell.Designer.cs">
+      <DependentUpon>RBorrowBell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RBuyBell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RBuyBell.Designer.cs">
+      <DependentUpon>RBuyBell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RCusBell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RCusBell.Designer.cs">
+      <DependentUpon>RCusBell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RSellBell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RSellBell.Designer.cs">
+      <DependentUpon>RSellBell.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MyControls\BookItem.resx">
+      <DependentUpon>BookItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControls\myScannercs.resx">
+      <DependentUpon>myScannercs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\BellPage.resx">
+      <DependentUpon>BellPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\BookPage.resx">
+      <DependentUpon>BookPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\CustomerPage.resx">
+      <DependentUpon>CustomerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Dialogs\AddEditBook.resx">
+      <DependentUpon>AddEditBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Dialogs\AddEditCat.resx">
+      <DependentUpon>AddEditCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Dialogs\AddEditCustomer.resx">
+      <DependentUpon>AddEditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Dialogs\AddEditEmplo.resx">
+      <DependentUpon>AddEditEmplo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\EmployeePage.resx">
+      <DependentUpon>EmployeePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\ReportsPage.resx">
+      <DependentUpon>ReportsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\splashScreen.resx">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\RBorrowBell.resx">
+      <DependentUpon>RBorrowBell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RBuyBell.resx">
+      <DependentUpon>RBuyBell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RCusBell.resx">
+      <DependentUpon>RCusBell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RSellBell.resx">
+      <DependentUpon>RSellBell.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AForge.Video.DirectShow">
+      <Version>2.2.5</Version>
+    </PackageReference>
+    <PackageReference Include="Guna.UI2.WinForms">
+      <Version>2.0.4.6</Version>
+    </PackageReference>
+    <PackageReference Include="ZXing.Net">
+      <Version>0.16.9</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Health Book_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badge_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categorize_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_button_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_window_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whome_90px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wbook_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wtie_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tie_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_90px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whome_90px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_90px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wcustomer_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_96px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wbill_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screen_Recording_20240511_082804_YouTube.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scan.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrow_book_50pxww.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collapse_50pxe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Male_50px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
